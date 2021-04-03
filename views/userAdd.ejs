@@ -1,0 +1,10 @@
+<h1>Ajouter un utilisateur</h1>
+<form action="/user" method="POST">
+    Prénom : 
+    <input type="text" name="first_name" value=""/><br/>
+    Nom : 
+    <input type="text" name="last_name" value=""/><br/>
+    <input type="hidden" name="user_id" value=""/><br/>
+    <input type="submit" name="save" value="Ajouter l'utilisateur"/><br/>
+    <input type="submit" value="Retour à la liste des utilisateurs" formaction="/user"/>
+</form>

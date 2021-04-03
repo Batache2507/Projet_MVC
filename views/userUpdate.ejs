@@ -1,0 +1,10 @@
+<h1>Modifier un utilisateur</h1>
+<form action="/user/update" method="POST">
+    Prénom : 
+    <input type="text" name="first_name" value="<%= first_name %>"/><br/>
+    Nom : 
+    <input type="text" name="last_name" value="<%= last_name %>"/><br/>
+    <input type="hidden" name="user_id" value="<%= user_id %>"/><br/>
+    <input type="submit" name="save" value="Enregistrer la modification"/><br/>
+    <input type="submit" value="Retour à la liste des utilisateurs" formaction="/user"/>
+</form>
